@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/CSS/email.css}">
+
+</head>
+<body>
+<div class="container">
+    <h1>Email Verification</h1>
+    <form action="/code/generate" method="post">
+        <input type="hidden" name="username" th:value="${username}" required>
+        <label for="otp">Enter the code received on email:</label>
+        <input type="text" id="otp" name="code" required>
+         <br>
+        <div th:if="${errorMessage}" class="error-message" id="error">
+            <p th:text="${errorMessage}"></p>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>

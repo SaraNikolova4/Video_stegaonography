@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/CSS/encode.css}">
+
+</head>
+<body>
+<div id="mainHome">
+
+<form method="post" action="/encode">
+    <div id="divEmail">
+        <label>Email</label>
+        <input type="text" name="Email">
+    </div>
+   <div id="divMessage">
+       <label>Message</label>
+       <input type="text" name="Message">
+   </div>
+  <div class="select-wrapper">
+      <div id="divSelect">
+          <label>Choose a song in which you want to hide the message.</label>
+    <select name="audio" style=" width: 160px; margin-right: 10px;">
+        <option value="1">Smells Like Teen Spirit </option>
+        <option value="2">Bohemian Rhapsody</option>
+        <option value="3">Hey Jude</option>
+        <option value="4">Like A Rolling Stone</option>
+        <option value="5">I Will Always Love You </option>
+    </select>
+      </div>
+      <div name="divButtons">
+    <input type="submit" value="Submit">
+      <a href="/home"><button type="button">Home</button></a>
+      </div>
+  </div>
+</form>
+</div>
+</body>

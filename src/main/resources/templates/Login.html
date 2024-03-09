@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/CSS/login.css}">
+
+</head>
+<body>
+<form method="post" action="/login">
+    <div id="div1">
+        <div th:text="${must}"></div>
+    <h2>Login</h2>
+    <div id="labelEmail"><label for="email">Email: </label><br><input type="text" name="email" id="email"><br> </div>
+  <div id="labelPassword"> <label for="password">Password: </label><br><input type="password" id="password" name="password"><br></div>
+        <br>
+        <div th:if="${errorMessage}" class="error-message" id="error">
+            <p th:text="${errorMessage}"></p>
+        </div>
+           <a href="/registration">Create a new profile</a>
+    <button class="submit" type="submit">Login</button>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f7ff; /* Light blue background for a soft, inviting look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 15px;
+}
+
+#mainCode {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; /* Increased max-width for a wider form */
+}
+
+h1 {
+    color: #007bff; /* Blue color for the title */
+    text-align: center;
+    margin-bottom: 30px; /* More space below the title */
+    font-size: 24px; /* Larger title */
+}
+
+input[type="hidden"] {
+    display: none; /* Hide hidden inputs */
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #007bff; /* Bright blue background */
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Larger font size for button text */
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* A darker shade of blue for hover effect */
+}
+

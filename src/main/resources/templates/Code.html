@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR Code Page</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/CSS/code.css}">
+</head>
+<body>
+<div id="mainCode">
+<form method="get" action="/code/valid">
+  <h1>Scan this code to sign in</h1>
+  <input type="hidden" name="username" th:value="${username}" required>
+  <img th:src="'data:image/png;base64,' + ${base64Image}" alt="QR Code"/>
+  <button type="submit">Validate Key</button>
+</form>
+</div>
+</body>
+</html>

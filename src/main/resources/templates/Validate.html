@@ -1,0 +1,26 @@
+<!-- Во ValidationForm.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation Form</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/CSS/validate.css}">
+
+</head>
+<body>
+<div id="mainValidate">
+<h1>Validation Form</h1>
+<form action="/code/validate/key" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required><br>
+  <label for="code">Code:</label>
+  <input type="text" id="code" name="code" required><br>
+  <div th:if="${validationResult}" class="error-message" id="error">
+    <p th:text="${validationResult}"></p>
+  </div>
+  <button type="submit">Validate Key</button>
+</form>
+</div>
+</body>
+</html>

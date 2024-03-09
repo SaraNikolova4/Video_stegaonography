@@ -1,0 +1,220 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+
+#mainEncDec {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 30px;
+    /* Center the div horizontally */
+
+}
+
+#divEncode, #divDecode {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin-bottom: 20px;
+
+}
+
+
+h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333333;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+#about,#contact {
+    padding: 20px;
+}
+#us, #info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: 0 auto; /* Center the div horizontally */
+
+}
+#home
+{
+    width: 70%;
+    margin: 0 auto;
+}
+h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+/*body {*/
+/*    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+/*    background-color: #f2f2f2;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*nav {*/
+/*    background-color: #007bff;*/
+/*    padding: 10px 0;*/
+/*}*/
+
+/*nav ul {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*}*/
+
+/*nav ul li {*/
+/*    display: inline;*/
+/*    margin-right: 20px;*/
+/*}*/
+
+/*nav ul li a {*/
+/*    color: #ffffff;*/
+/*    text-decoration: none;*/
+/*    font-size: 30px;*/
+/*}*/
+
+/*.container {*/
+/*    max-width: 900px; !* Adjust max-width as needed *!*/
+/*    margin: 0 auto;*/
+/*    padding: 20px; !* Add padding to create space around the sections *!*/
+/*    display: flex;*/
+/*    flex-direction: column; !* Stack sections vertically *!*/
+/*    align-items: center; !* Center sections horizontally *!*/
+/*}*/
+
+/*section {*/
+/*    background-color: #ffffff;*/
+/*    border-radius: 10px;*/
+/*    margin-bottom: 20px;*/
+/*    overflow: hidden; !* Prevents the shadow from overflowing *!*/
+/*    width: 100%; !* Set width to 100% for all sections *!*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); !* Apply box shadow *!*/
+/*}*/
+
+/*#mainEncDec {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    gap: 20px; !* Add space between the divs *!*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*#divEncode, #divDecode {*/
+/*    padding: 20px;*/
+/*    width: calc(50% - 20px); !* Set width to 50% of the container with margin *!*/
+/*    box-sizing: border-box; !* Include padding in the width calculation *!*/
+/*}*/
+
+/*h2 {*/
+/*    color: #007bff;*/
+/*    font-size: 24px;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*p {*/
+/*    color: #333333;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*button {*/
+/*    background-color: #007bff;*/
+/*    color: #ffffff;*/
+/*    padding: 10px 20px;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    cursor: pointer;*/
+/*    font-size: 16px;*/
+/*}*/
+
+/*button:hover {*/
+/*    background-color: #0056b3;*/
+/*}*/
+
+/*ul {*/
+/*    padding: 0;*/
+/*}*/
+
+/*li {*/
+/*    list-style-type: none;*/
+/*    margin-bottom: 5px;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: #007bff;*/
+/*}*/
+
+/*a:hover {*/
+/*    color: #0056b3;*/
+/*}*/

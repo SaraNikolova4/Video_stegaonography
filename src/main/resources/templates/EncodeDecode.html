@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Steganography App</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/CSS/encodedecode.css}">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+            <a th:if="${user != null}" href="/logout" th:text="${have}"></a>
+            <a th:if="${user == null}" href="/login" th:text="${have}"></a>
+
+        </li>
+        <li><a th:if="${user == null}" href="/registration" th:text="${reg}"></a></li>
+    </ul>
+</nav>
+<section id="home" >
+<div id="mainEncDec">
+    <div id="divEncode">
+        <h2>Encode</h2>
+        <p>Encode text into audio file</p>
+        <form method="get" action="/get_encode">
+            <button type="submit">Encode</button>
+        </form>
+    </div>
+    <div id="divDecode">
+        <h2>Decode</h2>
+        <p>Decode text from audio file</p>
+        <form method="get" action="/get_decode">
+            <button type="submit">Decode</button>
+        </form>
+    </div>
+</div>
+</section>
+<section id="about">
+    <div id="us">
+        <h2>About us</h2>
+
+        <p>We are young enthusiastic students that developed this web application for the class 'Information Security'.
+            The goal of this application is to show how a message can be hidden/encoded in an audio file and accordinlgy it can
+            be decoded. This can be used if users want to send hidden messages to each other.
+        </p>
+    </div>
+</section>
+<section id="contact">
+ <div id="info">
+     <h2>Contact Us</h2>
+     <p>For inquiries, please feel free to reach out to us:</p>
+     <ul>
+         <li>Address: 123 Main Street, City, Country</li>
+         <li>Phone: +1234567890</li>
+         <li>Email: info@example.com</li>
+     </ul>
+ </div>
+</section>
+</body>
+</html>

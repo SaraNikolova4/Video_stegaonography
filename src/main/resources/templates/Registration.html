@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/CSS/registration.css}">
+
+</head>
+<body>
+<div id="mainReg">
+<form method="post" action="/registration">
+<!--    <div id="div2">-->
+    <h2>Create new Account</h2>
+ <div id="labelUsername"> <label for="username">Username: </label><br><input type="text" id="username" name="username"><br></div>
+ <div id="labelEmail"> <label for="email">Email: </label><br><input type="text" name="email" id="email"><br></div>
+  <div id="labelPassword"><label for="password">Password: </label><br><input type="password" id="password" name="password"><br></div>
+<div  id="labelCPassword">  <label for="cpassword">Confirm Password:</label><br><input type="password" id="cpassword" name="cpassword"><br></div>
+ <div  id="labelPhone"> <label for="phone">Phone: </label><br><input type="text" id="phone" name="phone"><br></div>
+  <br>
+    <div th:if="${errorMessage}" class="error-message" id="error">
+        <p th:text="${errorMessage}"></p>
+    </div>
+  <button class="submit" type="submit">Sign up</button>
+<!--    </div>-->
+</form>
+</div>
+</body>
+</html>

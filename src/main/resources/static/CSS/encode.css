@@ -1,0 +1,82 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f7ff;
+    margin: 0;
+    padding: 0;
+}
+
+#mainHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px; /* Set the width of the form */
+}
+
+#divEmail,
+#divMessage,
+.select-wrapper {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#divMessage > input[type=text]{
+   height: 200px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.select-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#divSelect {
+    margin-bottom: 10px;
+}
+
+select {
+    height: 60px;
+    font-size: 20px;
+}
+
+#divButtons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input[type="submit"],
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+
+    margin-right: 10px;
+    margin-top: 20px;
+}

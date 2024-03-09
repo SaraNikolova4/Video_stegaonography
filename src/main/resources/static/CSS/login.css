@@ -1,0 +1,75 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6f7ff; /* Lighter blue background for a softer look */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 15px;
+}
+
+#div1 {
+    background-color: #ffffff;
+    padding: 80px; /* Significantly increased padding */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2); /* Deeper shadow for more depth */
+    width: 100%;
+    max-width: 700px; /* Increased max width for a larger form */
+}
+
+h2 {
+    color: #007bff; /* Blue color for the title */
+    text-align: center;
+    margin-bottom: 50px; /* More space below the title */
+    font-size: 40px; /* Larger title */
+}
+
+label {
+    display: block;
+    margin-bottom: 15px; /* More space above inputs */
+    color: #333;
+    font-size: 20px; /* Larger labels for better readability */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 20px; /* Larger input fields */
+    margin-bottom: 30px; /* More space between fields */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 18px; /* Larger font size for input text */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit {
+    width: 100%;
+    background-color: #007bff; /* Bright blue for the button */
+    color: #ffffff;
+    padding: 20px 0; /* Taller button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; /* Larger button text */
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+@media (max-width: 768px) {
+    #div1 {
+        padding: 40px; /* Adjusted for smaller screens */
+        margin: 10px;
+        max-width: 95%; /* Almost full width on small screens */
+    }
+}
+
